@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vanilla Challenge</title>
+  </head>
+  <body>
+    <div id="board">
+      <h1>현재 시간</h1>
+    <h2 id="clock">00:00:00</h2>
+   </div>
+   <div id="board">
+    <form class="hidden" id="login-form">
+      <h1>로그인</h1>
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+  </div>
+  <div id="board">
+    <h1>ToDo</h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="board">
+    <h1>날씨 & 위치</h1>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+    <script src="js/background.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
